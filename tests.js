@@ -37,4 +37,16 @@ assert (result,'rocks')
 console.log ('sget should return undefined when a non-existent array is accessed')
 result = testObject._('foo.bar.test.missing[0]')
 assert (result===undefined)
+
+console.log ('sget should return undefined when null is reached')
+result = _({some: null}, 'some.value')
+assert (result===undefined)
+
+console.log('sget should return undefined when first argument is undefined')
+result = _(void 0, 'some.value')
+assert (result===undefined)
+
+console.log('sget should return undefined when first argument is null')
+result = _(null, 'some.value')
+assert (result===undefined)
 console.log ('All tests passed successfully')

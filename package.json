@@ -1,6 +1,6 @@
 {
-  "name": "safe-get",
-  "version": "1.0.5",
+  "name": "@jamesnimlos/safe-get",
+  "version": "1.0.7",
   "description": "A small safe accessor that uses reduce to prevent 'Cannot read property of undefined' errors",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wakecoder/sget.git"
+    "url": "git+https://github.com/JamesNimlos/sget.git"
   },
   "keywords": [
     "safe",
